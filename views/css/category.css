@@ -1,0 +1,183 @@
+/* Main layout of the page */
+.page-layout {
+    display: flex;
+    justify-content: space-between; /* Distributes space between columns */
+    margin: 20px;
+}
+
+/* Style for the breadcrumb */
+.links {
+    padding: 15px 20px; /* Inner spacing (padding) */
+    margin: 10px auto; /* Top margin to separate from the menu */
+    max-width: 1300px; /* Maximum width to avoid sticking to the sides */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.links a {
+    color: #333; /* Link color */
+    text-decoration: none; /* Removes underline from links */
+    font-weight: bold; /* Highlights the links */
+}
+
+.links a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+.links .fa-angle-right {
+    margin: 0 5px; /* Spacing around the arrow icon */
+    color: #555; /* Softer color for the arrow icon */
+}
+
+.name_category {
+    margin: 10px auto; /* Top margin to separate from the menu */
+    max-width: 1300px; /* Maximum width to avoid sticking to the sides */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Responsiveness adjustments */
+@media (max-width: 768px) {
+    .links {
+        padding: 10px 15px; /* Reduces padding on smaller screens */
+        margin: 10px; /* Smaller lateral margin for smaller screens */
+    }
+}
+
+/* Sidebar column style (Categories and Price) */
+.sidebar {
+    padding: 15px 20px; /* Inner spacing (padding) */
+    margin: 10px auto; /* Top margin to separate from the menu */
+    max-width: 1400px; /* Maximum width to avoid sticking to the sides */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Style for the products section */
+.products-section {
+    width: 75%; /* Width of the products column */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Distributes products in a grid */
+    grid-gap: 20px; /* Space between products */
+}
+
+/* Style for categories */
+.category, .pricy {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style for category items */
+.item_category {
+    margin-bottom: 20px;
+}
+
+/* Price adjustments */
+.category_price {
+    margin-top: 20px;
+    border: 0.8px solid rgb(204, 204, 204);
+    margin: 0px;
+    padding: 14px 16px;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .page-layout {
+        flex-direction: column; /* Places the sidebar above the products */
+    }
+
+    .sidebar, .products-section {
+        width: 100%; /* Adjusts width to occupy the full screen */
+    }
+}
+
+/* Products section */
+.products-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Shows up to 4 columns (products) */
+    grid-gap: 20px; /* Space between products */
+    padding: 10px;
+}
+
+/* Individual product */
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    max-width: 250px; /* Limits the maximum width of the card */
+    margin: 0 auto; /* Centers the card */
+    background-color: #fff;
+}
+
+/* Product image */
+.product img {
+    max-width: 100%;
+    height: 200px; /* Limits the height of images */
+    object-fit: cover; /* Adjusts the image without distortion */
+}
+
+/* Product name */
+.product-name {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Price and discount */
+.product-discount {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.product-discount strong {
+    color: #e74c3c; /* Highlight for discounted price */
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 1200px) {
+    .products-section {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .products-section {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+}
+
+@media (max-width: 576px) {
+    .products-section {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+}
+
+/* Subcategories */
+.sub-category-item {
+    margin: 10px 0;
+}
+
+.sub-category-name {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Price range */
+.price-range {
+    margin: 10px 0;
+}
+
+.price-range a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+}
+
+.price-range a:hover {
+    color: #007bff;
+}
+
+/* Responsiveness for layout */
+@media (max-width: 768px) {
+    .products-section {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+}

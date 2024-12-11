@@ -1,0 +1,28 @@
+{{ full_page }}
+
+<div class="links">
+    <span>
+        <a href="/">site.com.br</a>  <!-- Link to the homepage -->
+        <span class="anbgle fa fa-angle-right" aria-hidden="true"></span>
+    </span>
+    {{ breadcrumb }}  <!-- Displays the breadcrumb for navigation -->
+</div>
+<div class="name_category"><h1></h1></div>  <!-- Title of the current category will be inserted here -->
+
+<div class="page-layout">
+    <!-- Sidebar (Left column with Categories and Price) -->
+    <div class="sidebar">
+        <h3 class="category"></h3>  <!-- Category section title -->
+        <div class="item_category">
+            <h4 class="name_category"></h4>  <!-- Main category name -->
+            <h4 class="name_category"></h4>  <!-- Subcategory or current category name -->
+        </div>
+     </div>
+    
+    <!-- Products Column -->
+    <div class="products-section">
+        {{ products }}  <!-- Displays the products in the selected category -->
+    </div>
+</div>
+</body>
+</html>

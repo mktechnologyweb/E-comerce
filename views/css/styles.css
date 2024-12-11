@@ -1,0 +1,264 @@
+body {
+    margin: 0; /* Remove default margin */
+}
+
+/* Basic styles for the navigation bar */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Keeps the search bar centered and the cart icon on the right */
+    height: 110px;
+    background-color: #000;
+    padding: 0 100px; /* Adjusts side padding */
+}
+
+/* Search bar */
+.search {
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Maximum size for the search bar */
+    margin: 0 auto; /* Centers the search bar */
+}
+
+.search input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #060606;
+    border-radius: 50px;
+    font-size: 16px;
+    padding-right: 40px; /* Space for the search button */
+}
+
+.search button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.search button i {
+    font-size: 20px;
+    color: #000; /* Color of the magnifying glass icon */
+}
+
+/* Logo styles */
+.logo a {
+    color: white;
+    text-align: start;
+    text-decoration: none;
+    font-size: 60px;
+}
+
+/* User/cart icon styles */
+.user-icon {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    color: #ffff;
+    font-size: 46px;
+    padding: 2px;
+}
+
+.t {
+    font-size: 20px;
+    padding: 5px;
+    color: #ffff;
+}
+
+.heart-icon {
+    color: #ffff;
+    font-size: 46px;
+    padding: 20px;
+}
+
+.cart {
+    color: #ffff;
+    font-size: 46px;
+}
+
+/* Slideshow container */
+.slide-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden; /* Ensures slides don't exceed container limits */
+}
+
+/* Images in the slide */
+.slide-container img {
+    width: 100%; /* Ensures images cover 100% of the container width */
+    max-height: 500px; /* Limits maximum height */
+    object-fit: cover; /* Fits image into container without distortion */
+    display: block;
+}
+
+/* Buttons for next and previous slides */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* 'Next' button */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Hover effect for navigation buttons */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Slide indicators (dots) */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Active state for dots */
+.active, .dot:hover {
+    background-color: #000;
+}
+
+/* Fade transition for slides */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+/* Best sellers gallery */
+
+/* Reset box sizing and margins */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Product container */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+/* Individual product card */
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.product-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #e60000;
+}
+
+.stars {
+    color: gold;
+}
+
+.stars .fa-star {
+    margin: 5px 2px;
+}
+
+/* Category menu */
+.category-menu {
+    display: flex;
+    justify-content: space-around;
+    background-color: #444;
+    padding: 10px 0;
+}
+
+.category-menu ul, a {
+    color: #fff;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.category-menu a:hover {
+    background-color: #666;
+}
+
+/* Responsive design */
+
+/* Adjust product cards for smaller screens */
+@media (max-width: 768px) {
+    .product-card {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Adjust top bar and category menu for very small screens */
+@media (max-width: 480px) {
+    .top-bar, .category-menu {
+        display: block;
+        text-align: center;
+    }
+
+    .product-card img {
+        max-height: 150px;
+    }
+}
+
+/* Adjust slideshow images for smaller screens */
+@media (max-width: 768px) {
+    .slide-container img {
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .slide-container img {
+        max-height: 200px;
+    }
+}

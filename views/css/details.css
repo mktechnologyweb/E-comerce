@@ -1,0 +1,182 @@
+.anbgle {
+    padding: 5px;
+}
+
+/* Padding for product details section */
+.details_product {
+    padding: 10px 100px;
+}
+
+/* Vertical alignment container */
+.conteiner_vertical {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 15px;
+}
+
+/* Style for vertical line used as separator */
+.vertical-hr {
+    width: 1px;           
+    height: 10px;        
+    background-color: black; 
+    border: none;         
+    margin: 0 10px;       
+}
+
+/* Style for horizontal line under product section */
+.hr_product {
+    width: 85%;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+/* Style for a taller vertical line separator */
+.vertical-hr-procuct {
+    width: 0.1px;           
+    height: 550px;        
+    margin: 10px;  
+}
+
+/* Main container for product and price */
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* Style for product thumbnails */
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    padding-right: 200px;
+}
+
+/* Thumbnail images style */
+.thumbnails img {
+    width: 100px;
+    cursor: pointer;
+}
+
+/* Price section styling next to the image slider */
+.price {
+    display: flex;
+    flex-direction: column;  
+    padding-left: 10px;
+    padding: 20px;
+}
+
+/* Star rating section styling */
+.stars {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Vertical line separator styling */
+.vertical-hr {
+    height: 10px;
+    border: none;
+    margin: 0 10px;
+}
+
+/* Buy button styling */
+.color_button {
+    background-color: #00c2ff;
+    color: white;
+    padding: 15px 100px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 100px;
+}
+
+/* Link inside buy button */
+.color_button a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* General spacing adjustments */
+.hr_payment {
+    margin: 10px 0;
+}
+
+/* Font size for highlighted text */
+.display span {
+    font-size: 32px;
+}
+
+/* Container for image zoom feature */
+.image-zoom-container {
+    position: relative;
+    overflow: hidden;
+    width: 500px; /* Normal image size */
+    height: 500px;
+}
+
+/* Default image style */
+.main-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Smooth animation */
+    cursor: zoom-in;
+}
+
+/* Zoom effect on hover */
+.main-image:hover img {
+    transform: scale(2); /* 2x zoom */
+    cursor: zoom-out;
+}
+
+/* Transition for zoom adjustments */
+.main-image img.zoom {
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
+}
+
+/* Relative positioning for favorite button */
+.main-image {
+    position: relative;
+}
+
+/* Style for favorite (heart) button */
+.favorite-button {
+    position: absolute;
+    top: 30px; /* Adjust vertical position */
+    right: 10px; /* Adjust horizontal position */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #ff4081; /* Heart icon color */
+    font-size: 40px;
+}
+
+/* Hover effect for favorite button */
+.favorite-button:hover {
+    color: #e91e63; /* Change color on hover */
+}
+
+/* Description container styling */
+.description {
+    max-width: 80%; /* Maximum width */
+    margin: 20px auto; /* Center horizontally */
+    padding: 20px; /* Inner spacing */
+    background-color: white; /* Light background */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Paragraphs inside description section */
+.description p {
+    line-height: 1.6; /* Increase line spacing */
+    color: #555; /* Text color */
+}

@@ -1,0 +1,33 @@
+{{ full_page }}
+
+<div class="links">
+    <span>
+        <a href="/">site.com.br</a>  <!-- Link to the homepage -->
+        <span class="anbgle fa fa-angle-right" aria-hidden="true"></span>
+    </span>
+    {{ breadcrumb }}  <!-- Displays the breadcrumb for navigation -->
+</div>
+<div class="name_category"><h1>{{ bread }}</h1></div>  <!-- Displays the current category title -->
+
+<div class="page-layout">
+    <!-- Sidebar (Left column with Categories and Price) -->
+    <div class="sidebar">
+        <h3 class="category">Category</h3>  <!-- Title for the category section -->
+        <div class="item_category">
+            <h4 class="name_category">{{ bread }}</h4>  <!-- Displays the main category name -->
+            <h4 class="name_category"> {{ item_category }}</h4>  <!-- Displays the subcategory or current category name -->
+        </div>
+        
+        <div class="category_price">
+            <h3 class="pricy">Price</h3>  <!-- Title for the price section -->
+            {{ category_price }}  <!-- Displays the price filter options for the category -->
+        </div>
+    </div>
+    
+    <!-- Products Column -->
+    <div class="products-section">
+        {{ products }}  <!-- Displays the products in the selected category -->
+    </div>
+</div>
+</body>
+</html>

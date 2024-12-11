@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem Vindo à Loja</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+
+
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <a href="/">Logo</a>
+        </div>
+        <div class="service">
+            <i class="icons fa fa-phone" aria-hidden="true"> <a href="">Central de atendimento</a></i>
+            <i class="icons fa fa-archive" aria-hidden="true"> <a href="">Meus pedidos</a></i>
+            <i class="icons fa fa-lock" aria-hidden="true"> <a href="">Ambiente 100% seguro</a></i>
+        </div>
+    </div>
+
+    <main>
+        <div class="iden">
+            <h1>Identificação</h1>
+        </div>   
+        
+<div class="login">
+    <form action="/login?redirect={{ redirect_page }}" method="POST" class="login-form">
+        <input type="hidden" name="redirect" value="{{ redirect_page }}">
+
+        <input type="email" name="email" placeholder="Email">
+        <input type="password" name="password" placeholder="Senha">
+        <button type="submit" onclick="handleCheckout()">Entrar</button>
+    </form>
+    <div id="error-message" style="color:red;"></div>
+</div>
+<div class="iden">
+    <h3>Ou</h3>
+    <p>FAÇA SEU LOGIN COM REDE SOCIAL</p>
+</div>
+    <div class="social-login">
+    <button class="social-button" id="google-login">Login com Google</button>
+    
+</div>
+<div class="cadastro">
+    <button class="button"><a href="/cadastro">QUERO ME CADASTRAR</a>
+    </button>
+</div>
+
+<script src="/js/cart.js"></script>
+
+</body>
+</html>

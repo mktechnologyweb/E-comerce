@@ -1,0 +1,229 @@
+/* Style for service links */
+.service a {
+  color: #fff;
+  text-underline-offset: 4px;
+  padding: 0px 5px;
+}
+
+/* Service container styling */
+.service {
+  margin-right: 300px;
+}
+
+/* Styling for icons */
+.icons {
+  color: #fff;
+  padding: 0px 10px;
+}
+
+/* Styling for cart container */
+.my_cart {
+  padding: 50px 100px;
+}
+
+/* Styling for horizontal lines in the cart */
+.hr_cart {
+  margin-top: 20px;
+  width: 77%;
+}
+
+/* Column layout */
+.column {
+  float: left;
+  margin-left: 30px;
+}
+
+/* General styling for images */
+img {
+  width: 95px;
+  margin-left: 70px;
+}
+
+/* Styling for left column */
+.left {
+  width: 12%;
+}
+
+/* Styling for middle column */
+.middle {
+  width: 43%;
+  padding-top: 20px;
+}
+
+/* Styling for product details links */
+.dedail {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+
+/* Clear floats after column elements */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Styling for right column text */
+.right p {
+  margin-top: 100px;
+  font-size: 10px;
+}
+
+/* Styling for quantity dropdown */
+.select_qtd {
+  padding: 12px 32px 12px 12px;
+}
+
+/* Styling for form layout */
+.for {
+  margin-top: 110px;
+}
+
+/* Styling for save buttons and links */
+.salve, a {
+  color: #000;
+  text-underline-offset: 4px;
+  padding-top: 20px;
+  padding: 10px 5px;
+}
+
+/* Styling for order details */
+.vedido {
+  padding-top: 30px;
+  font-size: 20px;
+}
+
+/* Responsive styles for screens smaller than 1024px */
+@media (max-width: 1024px) {
+  .service {
+      margin-right: 200px;
+  }
+  .my_cart {
+      padding: 30px 50px;
+  }
+  .hr_cart {
+      width: 85%;
+  }
+  .left {
+      width: 15%;
+  }
+  .middle {
+      width: 55%;
+  }
+  img {
+      width: 80px;
+      margin-left: 30px;
+  }
+  .right p {
+      margin-top: 80px;
+      font-size: 12px;
+  }
+  .select_qtd {
+      padding: 10px 20px;
+  }
+}
+
+/* Responsive styles for screens smaller than 768px */
+@media (max-width: 768px) {
+  .service {
+      margin-right: 100px;
+  }
+  .icons {
+      padding: 0px 5px;
+  }
+  .my_cart {
+      padding: 20px 30px;
+  }
+  .hr_cart {
+      width: 90%;
+  }
+  .column {
+      margin-left: 10px;
+  }
+  img {
+      width: 70px;
+      margin-left: 20px;
+  }
+  .left {
+      width: 20%;
+  }
+  .middle {
+      width: 60%;
+  }
+  .right p {
+      margin-top: 50px;
+      font-size: 10px;
+  }
+  .vedido {
+      font-size: 18px;
+  }
+}
+
+/* Responsive styles for screens smaller than 480px */
+@media (max-width: 480px) {
+  .service {
+      margin-right: 0;
+  }
+  .my_cart {
+      padding: 10px 15px;
+  }
+  .hr_cart {
+      width: 95%;
+  }
+  img {
+      width: 60px;
+      margin-left: 10px;
+  }
+  .left, .middle, .right {
+      width: 100%;
+      float: none;
+      text-align: center;
+  }
+  .right p {
+      margin-top: 20px;
+  }
+  .select_qtd {
+      width: 100%;
+      padding: 10px;
+  }
+  .vedido {
+      font-size: 16px;
+  }
+}
+
+/* Styling for the address form container */
+#address_form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for address form title */
+#address_form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Styling for form labels */
+#address_form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: bold;
+}
+
+/* Styling for text input fields */
+#address_form input[type="text"], #address_form input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: bord
+}

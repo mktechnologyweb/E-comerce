@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem Vindo à Loja</title>
+   
+    <link rel="stylesheet" href="css/customer.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+</head>
+<body>
+    <div class="container-customer">
+       <div class="logo-customer">
+        <a href="/">Logo</a>
+       </div>
+        <div class="n">
+            <a data-url="/preferences_page" class="nav-link"  href="#">Preferências de Conta</a>
+            <a href="">Suporte ao Cliente</a>
+            <span>
+                Olá, {{ name }} ! Bem-vindo à sua conta.
+            </span>
+            <a href="/logout">Sair</a>
+       </div>
+    </div>
+
+
+    <div class="container-my-account">
+         <h1>Minha Conta</h1>
+    </div>
+
+     <div class="column-my-account">
+       <div class="sidbar-my-account">
+       
+        <div class="div-hr">
+            <hr class="hr-sidbar-order"> 
+            <div class="c">
+        <a href="/my_account">Meus pedidos</a>
+    </div>
+    <div class="div-hr">
+        <hr class="hr-sidbar">
+        <div class="c">
+            <a href="" data-url="/favorits_my" class="nav-link">Lista de desejos</a>
+        </div>
+    
+    </div>
+    <div class="div-hr">
+        <hr class="hr-sidbar">
+        <div class="c">
+            <a href=""  class="nav-link" data-url="/payment">Metodo de Pagamento</a>
+        </div>
+    
+    </div>
+    <div class="div-hr">
+        <hr class="hr-sidbar">
+        <div class="c">
+            <a href="" class="nav-link" data-url="/address">Endereços</a>
+            
+        </div>
+        <hr class="hr-sidbar">
+        <div class="c">
+          
+            
+        </div>
+    </div>
+ </div>
+</div>
+ </div>
+    <div class="column-my-account" id="content" style="border: solid hsla(0, 0%, 7%, .125);">
+        {{ lista }}
+        
+         </div>
+        
+        </div>
+        
+    </div>
+
+    <script>
+        // Function to load dynamic content
+        document.addEventListener('click', function(event) {
+    var target = event.target;
+    if (target.classList.contains('nav-link') || target.closest('.nav-link')) {
+        event.preventDefault(); //Prevents default redirection
+
+        var link = target.closest('.nav-link');
+        var url = link.getAttribute('data-url'); //Gets the URL from data-url
+
+        // Makes the AJAX request (fetch)
+        fetch(url, { headers: { 'X-Requested-With': 'XMLHttpRequest' } }) // AJAX Header
+            .then(function(response) {
+                return response.text();
+            })
+            .then(function(html) {
+                document.getElementById('content').innerHTML = html;
+            })
+            .catch(function(error) {
+                console.error('Erro ao carregar a página:', error);
+            });
+    }
+});
+</script>
+
+    
+   
+  <script src="/js/cart.js"></script>
+    </body>
+    </html>

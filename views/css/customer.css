@@ -1,0 +1,279 @@
+body {
+    margin: 0; /* Removes default margin from the body */
+}
+
+/* Navigation bar */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Keeps the search bar in the center and the cart on the right */
+    height: 110px;
+    background-color: #000; /* Black background */
+    padding: 0 100px; /* Adjusts the lateral spacing */
+}
+
+.nav .search {
+    flex: 1; /* Ensures the search section stretches */
+    display: flex;
+    justify-content: center; /* Centers the search content */
+}
+
+.nav input[type="text"] {
+    padding: 12px; /* Inner spacing */
+    width: 500px; /* Width of the search bar */
+    border: none; /* Removes border */
+    margin-top: 1px; /* Adds slight top spacing */
+    font-size: 17px; /* Font size for input text */
+    border-radius: 50px; /* Rounded corners */
+    text-align: center; /* Centers the text in the input */
+}
+
+.nav .search button {
+    font-size: 20px; /* Button text size */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    background-color: white; /* White background for button */
+    border-radius: 50px; /* Rounded corners */
+    padding: 10px; /* Inner padding for the button */
+}
+
+/* Logo in the navigation bar */
+.logo a {
+    color: white; /* White text color */
+    text-align: start; /* Aligns text to the start */
+    text-decoration: none; /* Removes underline from text */
+    font-size: 60px; /* Font size for the logo */
+}
+
+/* User icon styles */
+.user-icon {
+    text-decoration: none; /* Removes underline from the icon link */
+    color: white; /* White icon color */
+    display: flex;
+    align-items: center; /* Centers icon vertically */
+}
+
+/* Global box-sizing reset */
+* {
+    box-sizing: border-box; /* Includes padding and border in the element's width/height */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for customer section */
+.container-customer {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers content */
+    background-color: #000; /* Black background */
+    padding: 14px 16px; /* Inner padding */
+    text-decoration: none; /* Removes link decoration */
+    font-size: 17px; /* Font size */
+}
+
+/* Logo for customer section */
+.logo-customer a {
+    color: white; /* White text color */
+    text-decoration: none; /* Removes underline */
+    font-size: 60px; /* Font size for the logo */
+    padding-right: 50px; /* Spacing between logo and other content */
+}
+
+/* Navigation links */
+.n a {
+    color: #fff; /* White text */
+    text-decoration: none; /* Removes underline */
+    padding: 0px 16px; /* Spacing between links */
+}
+
+.n span {
+    color: #fff; /* White text color for spans */
+}
+
+/* My Account container */
+.container-my-account {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    padding-top: 150px; /* Spacing at the top */
+}
+
+/* My Account column */
+.column-my-account {
+    float: left; /* Aligns columns side by side */
+    width: 43%; /* Width of each column */
+    padding: 30px; /* Inner padding */
+    margin-top: 70px; /* Top margin */
+}
+
+/* Section container background */
+.container-section {
+    background-color: #f5f5f5; /* Light gray background */
+    height: 110px; /* Height of the container */
+}
+
+/* Order card column styles */
+.card-order-column {
+    float: left; /* Aligns items side by side */
+    width: 25%; /* Column width */
+    padding-top: 30px;
+    padding-left: 20px; /* Adds left padding */
+}
+
+.card-order-column p {
+    margin-top: 10px; /* Top margin for text */
+    color: #313131; /* Dark gray color for text */
+}
+
+.card-order-column h5 {
+    color: #6c757d; /* Lighter gray for headings */
+}
+
+/* Sidebar navigation links */
+.sidbar-my-account a {
+    text-decoration: none; /* Removes underline */
+    color: #000; /* Black text */
+}
+
+.sidbar-my-account {
+    display: flex; /* Makes sidebar items flexible */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    padding: 10px; /* Inner spacing */
+    text-decoration: none; /* Removes underline */
+}
+
+/* Custom class adjustments */
+.c {
+    padding-top: 20px; /* Top padding */
+    width: 150%; /* Width of the container */
+    height: 60px; /* Fixed height */
+}
+
+/* Divider styles */
+.div-hr {
+    width: 50%; /* Half-width divider */
+}
+
+.hr-sidbar-order {
+    width: 50%; /* Half-width divider */
+    border-style: ridge; /* Ridge border style */
+}
+
+.hr-sidbar {
+    border-style: ridge; /* Ridge border style */
+}
+
+/* Centered information section */
+.info {
+    text-align: center; /* Centers text */
+    padding: 10px; /* Inner padding */
+}
+
+/* Form container */
+.form {
+    max-width: 500px; /* Maximum width */
+    margin: 0 auto; /* Centers form */
+    padding: 20px; /* Inner padding */
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.form h2 {
+    text-align: center; /* Centers heading */
+    color: #333; /* Dark gray heading color */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.form label {
+    display: block; /* Makes labels block elements */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 8px; /* Space below label */
+    color: #555; /* Medium gray text */
+}
+
+.form input[type="text"],
+.form input[type="email"] {
+    width: 100%; /* Full-width input fields */
+    padding: 10px; /* Inner padding */
+    margin-bottom: 15px; /* Space below inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    box-sizing: border-box; /* Includes padding and border in width */
+}
+
+/* Submit button */
+.form button[type="submit"] {
+    width: 100%; /* Full-width button */
+    padding: 12px; /* Inner padding */
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    font-weight: bold; /* Bold text */
+    border: none; /* Removes border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+.form button[type="submit"]:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .nav {
+        padding: 0 50px; /* Reduces lateral spacing for tablets */
+    }
+    .nav input[type="text"] {
+        width: 400px; /* Adjusts search bar width */
+    }
+    .logo a {
+        font-size: 50px; /* Reduces logo size */
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column; /* Changes navigation to column layout */
+        padding: 0 20px; /* Reduces lateral padding */
+        height: auto; /* Adjusts height */
+    }
+    .nav input[type="text"] {
+        width: 300px; /* Smaller search bar */
+    }
+    .logo a {
+        font-size: 40px; /* Smaller logo size */
+    }
+    .container-my-account {
+        flex-direction: column; /* Changes layout to column */
+    }
+    .column-my-account {
+        width: 100%; /* Columns occupy full width */
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        padding: 0 10px; /* Smaller lateral padding */
+    }
+    .nav input[type="text"] {
+        width: 200px; /* Smaller search bar for small screens */
+    }
+    .logo a {
+        font-size: 35px; /* Smallest logo size */
+    }
+    .user-icon {
+        font-size: 14px; /* Reduces icon font size */
+    }
+    .container-my-account {
+        padding-top: 50px; /* Reduces top padding */
+    }
+    .column-my-account {
+        padding: 10px; /* Reduces padding in columns */
+    }
+    .card-order-column {
+        width: 100%; /* Full-width column */
+        padding-left: 0; /* Removes lateral padding */
+    }
+}

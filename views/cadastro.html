@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem Vindo à Loja</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/cart.css">
+    <link rel="stylesheet" href="/css/cadastro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <a href="/">Logo</a>
+        </div>
+        <div class="service">
+            <i class="icons fa fa-phone" aria-hidden="true"> <a href="">Central de atendimento</a></i>
+            <i class="icons fa fa-archive" aria-hidden="true"> <a href="">Meus pedidos</a></i>
+            <i class="icons fa fa-lock" aria-hidden="true"> <a href="">Ambiente 100% seguro</a></i>
+        </div>
+    </div>
+
+    <main>
+        <div class="my_cart">
+            <h1>Identificação</h1>
+            
+        </div>
+     
+<div class="cadastro">
+
+    <form id="signup-form" method="POST" action="/register">
+       
+        <p class="social-login">FAÇA SEU LOGIN COM REDE SOCIAL</p>
+        <button class="social-button" id="google-login">Login com Google</button>
+        <hr>
+        <h2  class="social-login">Cadastro</h2>
+        <input type="text" name="first_name" placeholder="Nome" required>
+        <input type="text" name="last_name" placeholder="Sobre Nome" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password"  name="password" placeholder="Senha" required>
+        <input type="password" placeholder="Confirme sua senha" required>
+        <label>
+            <input type="checkbox" required> Aceito os termos e condições
+        </label>
+        <button type="submit">Cadastrar</button>
+    </form>
+    
+</div>
+
+
+</body>
+</html>

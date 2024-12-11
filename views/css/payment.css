@@ -1,0 +1,120 @@
+/* Container for the payment method section */
+.payment-method-section {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for individual payment card */
+.card-payment {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Header of the payment card with title and edit button */
+.card-payment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* Title style in the payment card header */
+.card-payment-header h5 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Edit button style in the payment card header */
+.btn-edit {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #007bff;
+}
+
+/* Style for text content inside the payment card body */
+.card-payment-body p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Add new payment button styling */
+.btn-add-payment {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+/* Hover effect for the add payment button */
+.btn-add-payment:hover {
+  background-color: #0056b3;
+}
+
+/* Modal container, hidden by default */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Content box for the modal */
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+}
+
+/* Close button for the modal */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Hover and focus effects for the close button */
+.close:hover,
+.close:focus {
+  color: black;
+  cursor: pointer;
+}
+
+/* General button styling */
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #45a049;
+}

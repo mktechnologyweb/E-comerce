@@ -1,0 +1,114 @@
+<style>
+.payment-method-section {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+}
+
+.card-payment {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a light shadow */
+}
+
+.card-payment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd; /* Adds a divider */
+    padding-bottom: 10px;
+}
+
+.card-payment-header h5 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-edit {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #007bff; /* Blue color for edit button */
+}
+
+.card-payment-body p {
+    margin: 10px 0;
+    font-size: 16px; /* Sets font size for paragraph */
+}
+
+.btn-add-payment {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-add-payment:hover {
+    background-color: #0056b3; /* Darker shade for hover state */
+}
+
+/* Modal is hidden by default */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1; /* Ensures modal appears on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Sets the width of the modal */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Changes color on hover or focus */
+    cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer; /* Pointer cursor for buttons */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green for hover state */
+}
+
+
+</style>
+ 
+ 
+ {{ address }}
